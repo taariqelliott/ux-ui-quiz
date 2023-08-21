@@ -12,7 +12,7 @@ const Quiz = () => {
     <div className="quiz">
       {quizState.showResults && (
         <div className="results">
-          <div className="congratulations">Congratulations</div>
+          <div className="congratulations">Congratulations!</div>
           <div className="results-info">
             <div>You completed the quiz!</div>
             <div>
