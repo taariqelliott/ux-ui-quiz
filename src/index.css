@@ -103,17 +103,19 @@ div {
 }
 
 .next-button {
-  margin: 0 auto;
   color: #fff;
-  background: #0b0e21;
+  background: #0d1336;
   width: 300px;
   font-size: 18px;
   font-weight: 600;
-  padding: 14px 75px;
+  padding: 14px 85px;
   text-transform: uppercase;
   cursor: pointer;
   text-align: center;
+  border: dodgerblue solid 2px;
+  margin: 5px auto; /* Change margin to auto for horizontal centering */
 }
+
 
 .score {
   background: #fff;

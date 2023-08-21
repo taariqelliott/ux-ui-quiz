@@ -1,6 +1,6 @@
-import { createContext, useReducer } from "react";
-import questions from "../data";
-import { shuffleAnswers } from "../helpers";
+import React, { createContext, useReducer } from "react";
+import questions from "../data"; // Make sure to have the correct path to your data file
+import { shuffleAnswers } from "../helpers"; // Make sure to have the correct path to your helpers file
 
 const initialState = {
   questions,
@@ -12,7 +12,6 @@ const initialState = {
 };
 
 const reducer = (state, action) => {
-  console.log("reducer", state, action);
   switch (action.type) {
     case "SELECT_ANSWER": {
       const correctAnswerCount =
@@ -40,7 +39,17 @@ const reducer = (state, action) => {
         currentQuestionIndex,
         showResults,
         answers,
-        currentAnswer: '',
+        currentAnswer: "",
+      };
+    }
+    case "PREVIOUS_QUESTION": {
+      const currentQuestionIndex = Math.max(0, state.currentQuestionIndex - 1);
+      const answers = shuffleAnswers(state.questions[currentQuestionIndex]);
+      return {
+        ...state,
+        currentQuestionIndex,
+        answers,
+        currentAnswer: "",
       };
     }
     case "RESTART": {
