@@ -1,13 +1,25 @@
-.connect-us{
+.connect-us {
+    border: dodgerblue 3px solid;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 30px;
 }
 
-input{
+input {
     margin: 5px;
 }
 
-.submit{
+.submit {
     background: dodgerblue;
-    border-radius: 5px ;
+    border-radius: 5px;
+    height: 40px;
+    width: 50px;
+    margin-top: 10px; /* Add some spacing */
+    align-self: center; /* Center the button horizontally */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
 }

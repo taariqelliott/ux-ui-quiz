@@ -25,7 +25,7 @@ const Quiz = () => {
           </div>
           <div className="connect">
             <div className="center-content">
-            <h1>Connect With Us!</h1>
+            
               <Contact />
             </div>
           </div>

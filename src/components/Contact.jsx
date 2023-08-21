@@ -30,6 +30,7 @@ const Contact = () => {
   return (
     <div>
       <form ref={form} onSubmit={sendEmail} className="connect-us">
+      <h1>Connect With Us!</h1>
         <label>Name</label>
         <input type="text" name="user_name" />
         <label>Email</label>
