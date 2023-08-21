@@ -1,0 +1,13 @@
+.connect-us{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    margin: 5px;
+}
+
+.submit{
+    background: dodgerblue;
+    border-radius: 5px ;
+}

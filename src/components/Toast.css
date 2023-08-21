@@ -1,0 +1,12 @@
+/* toastStyles.css */
+/* Change the background color of success toast */
+.Toastify__toast--success {
+    background-color: black;
+    color: white; /* Change to your desired color */
+  }
+  
+  /* Change the background color of error toast */
+  .Toastify__toast--error {
+    background-color: #f44336; /* Change to your desired color */
+  }
+  
