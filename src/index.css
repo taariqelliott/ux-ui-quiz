@@ -125,20 +125,40 @@ div {
   pointer-events: none;
 }
 
-/* .connect{
-  background: white;
-  padding-bottom: 30px;
-  align-items: center;
-  justify-content: center;
-} */
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .quiz {
+    width: 90%;
+    margin-top: 50px;
+  }
 
-/* Add this to your existing CSS */
-.center-content {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 100%; /* This ensures the container takes up the full height of its parent */
+  .question {
+    font-size: 20px;
+  }
+
+  .results {
+    height: auto;
+  }
+
+  .answers {
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 20px;
+  }
+
+  .answer {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .next-button {
+    width: 80%;
+    padding: 12px 0;
+    font-size: 16px;
+  }
+
+  .score {
+    width: 80%;
+    margin-bottom: 20px;
+  }
 }
